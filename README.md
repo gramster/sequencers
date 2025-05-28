@@ -1,6 +1,6 @@
 # Comparison of OXI One, Squarp Hapax, Synthstrom Deluge, Torso T-1and MidiPhy Seq v4+ as MIDI Sequencers
 
-(This is maintained at both [OXI One versus Hapax vs T1 vs Deluge](https://docs.google.com/document/d/1etLnCeL0BIIc-4HeFqp3lRIB2nNKVJaVp3NsHARar3Q/edit?usp=sharing) and [https://github.com/gramster/sequencers](https://github.com/gramster/sequencers). I added the Github page to help discoverability, but this document should be considered the definitive copy, as it is easier to maintain and take suggestions this way).
+(This is maintained at both [OXI One versus Hapax vs T1 vs Deluge](https://docs.google.com/document/d/1etLnCeL0BIIc-4HeFqp3lRIB2nNKVJaVp3NsHARar3Q/edit?usp=sharing) and [https://github.com/gramster/sequencers](https://github.com/gramster/sequencers). I added the Github page to help discoverability, but the document should be considered the definitive copy, as it is easier to maintain and take suggestions this way).
 
 I have never seen a head-to-head comparison video of these, so created this table and welcome feedback to keep it current.
 
