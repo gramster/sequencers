@@ -1,6 +1,6 @@
 # Comparison of OXI One, Squarp Hapax, Synthstrom Deluge, Torso T-1and MidiPhy Seq v4+ as MIDI Sequencers
 
-(This is maintained at both https://docs.google.com/document/d/1etLnCeL0BIIc-4HeFqp3lRIB2nNKVJaVp3NsHARar3Q/edit?usp=sharing and https://github.com/gramster/sequencers)
+(This is maintained at both [OXI One versus Hapax vs T1 vs Deluge](https://docs.google.com/document/d/1etLnCeL0BIIc-4HeFqp3lRIB2nNKVJaVp3NsHARar3Q/edit?usp=sharing) and [https://github.com/gramster/sequencers](https://github.com/gramster/sequencers). I added the Github page to help discoverability, but this document should be considered the definitive copy, as it is easier to maintain and take suggestions this way).
 
 I have never seen a head-to-head comparison video of these, so created this table and welcome feedback to keep it current.
 
@@ -8,10 +8,11 @@ I have owned all these devices at different points as I searched for the best fi
 
 Tl;dr recommendations:
 
-- If you want a portable battery-powered sequencer with lots of live and generative features, the Oxi One is the best option (especially when paired with an iPad). The Oxi is also the only one that can be driven from MIDI as a control surface (versus as a sequencer), allowing you to create your own custom use cases (something that Driven by Moss takes advantage of; see [OXI One \- New Sequencers and more for Bitwig and Reaper\!](https://youtu.be/buUjbQ6TYzk?si=CwvKmVYgS9Q1Do1y)). It strikes a great balance between all of these and the compact form factor, built-in battery and Bluetooth support provide a lot of flexibility. The main drawback is the number of button press combinations needed for all the functionality that has been added (an age-old problem the Deluge suffers from too), but the mk2 should help with that.  
+- If you want a portable battery-powered sequencer with lots of live and generative features, the Oxi One is the best option (especially when paired with an iPad). The Oxi is also the only one that can be driven from MIDI as a control surface (versus as a sequencer), allowing you to create your own custom use cases (something that Driven by Moss takes advantage of; see [OXI One \- New Sequencers and more for Bitwig and Reaper\!](https://youtu.be/buUjbQ6TYzk?si=CwvKmVYgS9Q1Do1y)). It strikes a great balance between all of these and the compact form factor, built-in battery and Bluetooth support provide a lot of flexibility. The main drawback is the number of button press combinations needed for all the functionality that has been added (an age-old problem the Deluge suffers from too), but the mk2 should help with that. The mk2 also makes the Oxi provide stiff competition to the more powerful Hapax and MidiPhy Seq v4+.  
 - If you are interested in generative music and live performance tweaking, all of these are good, but IMO the T-1 is the most immediate and fun; it's very deep though and requires an investment to learn. I would watch some videos and think carefully before buying it as a general purpose sequencer.  
 - If you want a complete portable audio/MIDI workstation, not just a sequencer, the Deluge is it. It’s the most limited in terms of MIDI effects and live or generative MIDI fun (although the community firmware team is working to improve that), but its the most capable if you just want to sequence many long sequences due to its unlimited number of tracks and track length.  
-- If you want the best sequencer for leaving in the studio and composing/arranging, the Hapax or MidiPhy Seq v4+ are probably it. The Hapax is unquestionably the easiest to learn IMO, due to the dual displays and multiple encoders for setting parameters that clearly convey most of your options at any moment. The pads are stiff though, and not great for real-time. The MidiPhy Seq v4+ is very deep and powerful (despite appearances from the table below; there are many things the MidiPhy Seq has that the others don’t that are not in the table), although it is limited in track count to 16, and if you want free-form polyphony (versus canned chords, although it has many of those) you need to allocate one track per simultaneous note. It also has a rather different way of doing things, using sequencing “layers”, up to 24 per track, with each property (note, gate, probability, etc…) sequenced on a separate layer.
+- If you want a rock solid sequencer for leaving in the studio and composing/arranging, the Hapax or MidiPhy Seq v4+ are probably the best choice, although the Oxi Mk2 should now be a contender. The Hapax is unquestionably the easiest to learn IMO, due to the dual displays and multiple encoders for setting parameters that clearly convey most of your options at any moment. It’s a sequencer that almost anyone can figure out the basics of immediately without a manual. The pads are stiff though, and not great for real-time.  
+- The MidiPhy Seq v4+ is very deep and arguably the most powerful (there are several things the MidiPhy Seq has that the others don’t that are not in the table), although it is limited in track count to 16, and if you want free-form polyphony (versus canned chords, although it has many of those) you need to allocate one track per simultaneous note. It also has a rather different way of doing things, using sequencing “layers”, up to 24 per track, with each property (note, gate, probability, etc…) sequenced on a separate layer. The DIY nature of the sequencer and its someone dated UX may be off putting to some. It’s most comparable to the Cirklon (but more affordable if you discount the labor costs you put in), although I have never owned a Cirklon so it’s not included in this table.
 
 | Feature | [Oxi One](https://oxiinstruments.com/oxi-one/) | [Hapax](https://squarp.net/hapax/) | [Deluge](https://synthstrom.com/product/deluge/) | [Torso T-1](https://torsoelectronics.com/pages/t-1) | [Midiphy Seq v4+](https://www.midiphy.com/en/mbseq-v4-/) |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -44,16 +45,38 @@ Tl;dr recommendations:
 | Conditionals | Yes | Yes | Yes | No | Yes |
 | Probability |  In N   | Yes | Yes | Yes | Yes |
 | Repeats | Yes | Yes | Yes | Yes | Yes |
+| MIDI CC Automation | Yes (4-8 Mod Lanes/Seq) | Yes (Comprehensive Automation) | Yes (Parameter Locks) | Limited (Filter Prob via Vel knob) | Yes (Parameter Layers) |
+| Probability (Note-on) | Yes ("Prob") | Yes ("Chance") | No | No (Filter Prob only) | Yes (Parameter Layer / Random Gate) |
+| Conditional Triggers / Logic | Yes (Extensive Logic Conditions) | Yes ("Conditional Trigs") | No | No | Limited (Implied by Random Gate/Val) |
+| Ratcheting / Repeats / Roll | Yes ("Retrigger") | Yes ("Roll") | No | Yes (Repeats, Offset, Time, Pace) | Yes (Roll Layer / Roll Trigger) |
+| Micro-Timing / Nudge | Yes ("Timing Offset") | Yes ("uTime") | Limited (Swing effect) | Yes ("Timing" knob for swing/offset) | Yes (Groove Templates/Humanizer) |
+| Swing | Yes (Track Level, affects steps) | Yes (Track Level, affects steps) | Yes (Track Level, affects steps) | Yes (Track Level, affects steps) | Yes (Groove Styles/Templates) |
+| Glide / Portamento (MIDI Out) | No (CV Only for dedicated Glide) | Yes (via Pitchbend Automation) | No (Internal Synth only) | No | Yes (Glide Trigger / Layers) |
+| Glide / Portamento (CV Out Only) | Yes | N/A (Focus on MIDI features) | N/A | N/A | Yes (CV outputs can be configured) |
+| Note Offset / Per-Step Transpose | Limited (Track param in some modes) | No (Track Transpose or automation) | No | Yes ("Rotate" for pattern phase) | Yes (Note Layer manipulation) |
+| Per-Step LFO Modulation | Yes (via Mod Lanes targeting LFOs if present) | Yes (Automate LFO params) | No | Yes (LFO on Note Range) | Yes (LFO Fx assignable per step) |
+| Per-Step Aftertouch | Yes (Mod Lanes) | Yes (Automation) | No | No | Yes (Parameter Layers) |
+| Per-Step Pitchbend | Yes (Mod Lanes) | Yes (Automation) | No | No | Yes (Parameter Layers) |
+| Per-Step NRPN | No | Yes (Automation) | No | No | Yes (Parameter Layers, if supported) |
+| Per-Step Program Change | Yes (Mod Lanes) | Yes (Automation) | No | No | Limited (Likely via CC or SysEx Layer) |
+| Per-Step Skip / Step Mute | Yes ("Skip") | No (Track Mute) | No | No | Yes (Skip Trigger) |
+| Per-Step Randomization (Params) | Yes (Various Randomize functions) | Yes ("Chance" for notes) | No | Yes ("Random" knob for any param) | Yes (Random Value Trigger / Humanizer) |
+| Per-Step FX Param Modulation | N/A (No internal MIDI FX described) | Yes (MIDI FX params automatable) | N/A (Internal audio FX) | N/A (No internal MIDI FX described) | Yes (Echo Fx, LFO Fx params) |
+| Chord-Specific Per-Step (Strum etc.) | Yes (Strum, Spread, Voicing, Type) | No | No | No | Yes (Multiple Chord Layer types) |
+| Generative-Specific Per-Step | Yes (Stochastic/Matriceal/accumulator params) | Yes (Conditional Trigs) | No | Yes (Core design, various params) | Yes (Euclidean, Random Gens) |
+| Groove Templates/Engines | Limited (Swing), New groove engine in mk2 | Limited (Swing) | Limited (Swing) | Limited (Swing) | Yes (Customizable Groove Templates) |
 | Draw Automation using pads | Almost anything | CC, Pitchbend, Aftertouch, Program Change, NRPN, CC pair, CV, effect parameters | Yes (need details of which) | N/A | Yes, with Matrix accessory |
 | Scales | \>30 | \>70 | 15? | 7 \+ 1 custom (per track) | 166 |
-| Chord Mode Controls | Chord type, voicing, spread, bass  | Octave, voicing, spread,extended chords, bass drops. Four stackable modifiers. |  | Voicing, spread |  |
+| Chord Mode Controls | Chord type, voicing, spread, bass  | Octave, voicing, spread,extended chords, bass drops. Four stackable modifiers. | ? | Voicing, spread | No, but it has about 200 predefined chords available. |
 | Chord Recognition | No | Yes | No | No | No |
+| Repeater/ratchet patterns | ? | ? | Yes |  | Yes, with editable config file |
 | Live Generative Modes | Stochastic, Matriceal | None specifically but live playing on tracks with stacked MIDI effects can act as such. | ? | Everything can be tweaked live | Everything can be tweaked live  |
 | Generative Algorithms | Euclidean, Drum pattern generator | Random,Curved,Symmetric (melodic) Euclidean (drums) | Euclidean | Euclidean | Euclidean, Random |
 | LFOs | 8 (4 sequencers x 2). Can modulate almost anything. | 2 Global LFOs, plus as (un stackable) MIDI effects on tracks. | 2 per synth or per drum part | ? | Yes |
 | LFO shapes |  |  |  | 8 | ? |
 | Modulation lanes | 32 | 32?. There is a mod matrix MIDI effect that can be applied per track. | ? |  | 4 internal “bus” outputs that can be routed as inputs to other tracks |
 | ARP Styles | “Many”. Note that each sequencer has one arp, so limited to 4 total. | Arps are per track stackable MIDI effects, so can have many | Arp is on synth presets, no sequencer arp | 6? | Custom |
+| Tempo changes are sequenceable | ? | ? | ? | ? | Yes, with ramp control |
 | Undo/Redo | Yes, 10 previous states | Yes, “many” | Unlimited | No | Undo |
 | Snapshot/Revert | Yes | Yes | No | Yes | Yes, with live pattern load/save |
 | MIDI Routing | Yes (USB/TRS/BLE/CV) | Yes? |  |  | Yes |
@@ -61,7 +84,7 @@ Tl;dr recommendations:
 | Latency Compensation | Yes, at sequencer level | Yes, at track level | No? |  | Yes |
 | MPE Support | No | Yes | Yes | No | No |
 | Auto-harmonize tracks | Yes | Yes | No | No | Yes (transpose \+force to scale) |
-| MIDI Effects | Arp,Randomize,Swing, Rolll, Chance, Euclidean, Chord generator , Harmonizer, LFOs, Internal MIDI modulations | Arp, Chance,Echo,Euclid, Filter, Harmonize, LFO,Randomize, Scale, Swing. Chainable, Mod Matrix | Maybe one day [https://github.com/SynthstromAudible/DelugeFirmware/discussions/466](https://github.com/SynthstromAudible/DelugeFirmware/discussions/466)  | Many | Echo, LFO, Pattern Morph, Transpose, Note Limit, Humanize/Robotocize, Force to Scale, Pattern Morph |
+| MIDI Effects | Arp,Randomize,Swing, Rolll, Chance, Euclidean, Chord generator , Harmonizer, LFOs, Internal MIDI modulations | Arp, Chance,Echo,Euclid, Filter, Harmonize, LFO,Randomize, Scale, Swing, ArPoly, Register, Mono, Shapes. Chainable, and accessible with Mod Matrix | Maybe one day [https://github.com/SynthstromAudible/DelugeFirmware/discussions/466](https://github.com/SynthstromAudible/DelugeFirmware/discussions/466)  | Many | Echo, LFO, Pattern Morph, Transpose, Note Limit, Humanize/Robotocize, Force to Scale. |
 | Import/Export MIDI | No | Yes | Yes | No? | Yes (can import while running) |
 | Custom Control Mode | Yes | No | No | No | No, but sequencer can be controlled by MIDI |
 | Accessories | [Oxi Split](https://oxiinstruments.com/product/oxi-split/), [Oxi Pipe](https://oxiinstruments.com/product/oxi-pipe/) |  |  |  | [Midiphy Matrix](https://www.midiphy.com/en/matrix/), various Eurorack modules |
